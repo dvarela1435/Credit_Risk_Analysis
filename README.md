@@ -6,53 +6,95 @@ The purpose of the analysis is to employ different techniques to train and evalu
 ## Results: 
 Using data from Loanstats 2019 1st Quarter
 - Random Over Sampler algorithms
+
 	Accuracy score: .62
+	
 	Confusion Matrix
-	52, 35
-	5952, 1116
-	Classification Report Imbalance
-Insert Photo
+	
+|                  | Predicted True  | Predicted False |
+| -                | -               | -               | 
+| Actually True    | 52              | 35              |
+| Actually False   | 5,952           | 1,116           |
+	
+Classification Report Imbalance
+
+![screen_1](/Resources/RandomOverSampler_report.png)
 
 - Synthetic Minority Oversampling Technique (SMOTE) Algorithms
-	Accuracy score was .65
-	Confusion Matrix
-	56,31
-	5840,11278
-	Classification Report Imbalance
-Insert Photo
+
+Accuracy score: .65
+	
+Confusion Matrix
+	
+|                  | Predicted True  | Predicted False |
+| -                | -               | -               | 
+| Actually True    | 56              | 31              |
+| Actually False   | 5,840           | 1,1278          |
+
+Classification Report Imbalance
+
+![screen_2](/Resources/SMOTE_report.png)
 
 
 - Cluster Centroids Algorithms
+
 	Accuracy score was .51
+	
 	Confusion Matrix
-	51, 36
-	9681, 7437
-	Classification Report Imbalance
-Insert Photo
+	
+|                  | Predicted True  | Predicted False |
+| -                | -               | -               | 
+| Actually True    | 51              | 36              |
+| Actually False   | 9,681           | 7,437           |
+
+Classification Report Imbalance
+	
+![screen_3](/Resources/Cluster_Centroids_report.png)
 
 - Synthetic Minority Oversampling Technique and Edited Nearest Neighbors (SMOTEENS) Algorithms
+
 	Accuracy score was .63
+
 	Confusion Matrix
-	61, 26
-	7294, 9824
-	Classification Report Imbalance
-Insert Photo
+	
+|                  | Predicted True  | Predicted False |
+| -                | -               | -               | 
+| Actually True    | 61              | 26              |
+| Actually False   | 7,294           | 9,824           |
+	
+Classification Report Imbalance
+	
+![screen_4](/Resources/SMOTEENN_report.png)
 
 - Used the Balanced Random Forest Classifier Algorithms
+
 	Accuracy score was .79
-	Confusion Matrix
-	59, 28
-	1475, 15643
-	Classification Report Imbalance
-Insert Photo
+
+	CConfusion Matrix
+	
+|                  | Predicted True  | Predicted False  |
+| -                | -               | -                | 
+| Actually True    | 59              | 28               |
+| Actually False   | 1,475           | 15,643           |
+
+Classification Report Imbalance
+	
+![screen_5](/Resources/Balanced_Random_Forest_Classifier_report.png)
 
 - Used the Easy Ensemble AdaBoost classifier Algorithms
+
 	Accuracy score was .92
+	
 	Confusion Matrix
-	79, 8
-	979, 16139
-	Classification Report Imbalance
-Insert Photo
+	
+|                  | Predicted True  | Predicted False  |
+| -                | -               | -                | 
+| Actually True    | 79              | 8                |
+| Actually False   | 979             | 16,139           |
+	
+Classification Report Imbalance
+	
+![screen_6](/Resources/Easy_Ensemble_AdaBoost_Classifier_report.png)
 
 
 
